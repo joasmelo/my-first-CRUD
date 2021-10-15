@@ -9,7 +9,7 @@ const closeModal = () => document.getElementById('modal')
 const tempClient = {
     nome: "Joas Melo",
     email: "joasmelo8@gmail.com",
-    celular: "8198750-9319",
+    celular: "8198866-0022",
     cidade: "Recife-PE"
 }
 
