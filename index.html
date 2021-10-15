@@ -19,7 +19,7 @@
     </header>
     <main>
         <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table class="records">
+        <table id="tbClient" class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -30,46 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Joas Melo</td>
-                    <td>joasmelo8@gmail.com</td>
-                    <td>(81) 98800-4422</td>
-                    <td>Recife-PE</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thais Carolinne</td>
-                    <td>thaiscarolinne2@gmail.com</td>
-                    <td>(81) 98899-7766</td>
-                    <td>Recife-PE</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pedro Americo</td>
-                    <td>pedroamerico08@gmail.com</td>
-                    <td>(81) 97788-6655</td>
-                    <td>Recife-PE</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Helena Nires</td>
-                    <td>helenanires02@gmail.com</td>
-                    <td>(81) 94433-9988</td>
-                    <td>Recife-PE</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
+ 
             </tbody>
         </table>
         <div class="modal" id="modal">
@@ -78,15 +39,15 @@
                     <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
-                    <input type="email" class="modal-field" placeholder="e-mail do Cliente">
-                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
-                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green">Salvar</button>
-                    <button class="button blue">Cancelar</button>
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
                 </footer>
             </div>
         </div>
