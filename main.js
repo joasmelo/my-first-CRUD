@@ -23,7 +23,7 @@ const updateClient = (index, client) => {
     setLocalStorage(dbClient)
 }
 
-//CRUD - READ
+//CRUD - READ (optional)
 const readClient = () => getLocalStorage()
 
 //CRUD - CREATE    
