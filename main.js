@@ -38,7 +38,6 @@ const isValidFields = () => {
 }
 
 //interation for layout
-
 const clearFields = () => {
     const fields = document.querySelectorAll(".modal-field")
     fields.forEach(field => field.value = "")
